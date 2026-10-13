@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ASTRO GOUTAM INC - Professional Chaldean Numerology, Mobile Numerology & Vastu">
+<title>ASTRO GOUTAM INC — Professional Numerology Platform</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="stars-overlay"></div>
+<header class="hero-section">
+  <div class="banner-container">
+    <img src="banner.png" alt="Astro Goutam Inc Banner" class="banner-img" onerror="this.onerror=null; this.src='banner.jpg';">
+  </div>
+</header>
+<main class="content-section">
+
+<section class="checker-section" id="checker">
+<h1 class="section-title">Individual Chaldean Numerology</h1><div class="gold-line"></div>
+<div class="checker-card">
+<div class="eyebrow">COMPLETE NUMEROLOGY REPORT</div>
+<h2>Enter Your Details</h2>
+<p class="checker-intro">Name, Date of Birth, Mobile Number and Profession are required for a complete analysis. Company Name is recommended but optional. Vehicle Number Last 4 Digits is optional.</p>
+<form id="checkerForm" novalidate autocomplete="off">
+<div class="fields">
+<label class="wide-label">Full Name <span class="required">*</span><input id="name" type="text" maxlength="80" placeholder="Enter your full name"></label>
+<label>Day <span class="required">*</span><input id="day" inputmode="numeric" maxlength="2" placeholder="DD"></label>
+<label>Month <span class="required">*</span><input id="month" inputmode="numeric" maxlength="2" placeholder="MM"></label>
+<label>Year <span class="required">*</span><input id="year" inputmode="numeric" maxlength="4" placeholder="YYYY"></label>
+<label class="wide-label">10-Digit Mobile Number <span class="required">*</span><input id="mobile" inputmode="numeric" maxlength="10" placeholder="Enter 10-digit mobile number"></label>
+<label class="wide-label">Profession <span class="required">*</span>
+  <select id="profession">
+    <option value="">Select your profession</option>
+    <option value="Doctor / Pharma / Medical">Doctor / Pharma / Medical</option>
+    <option value="Engineer / IT / Software">Engineer / IT / Software</option>
+    <option value="Media / Glamour / Artist">Media / Glamour / Artist</option>
+    <option value="Teacher / Professor / Education">Teacher / Professor / Education</option>
+    <option value="Accounts / Banking / Finance">Accounts / Banking / Finance</option>
+    <option value="Lawyer / Judge / Legal">Lawyer / Judge / Legal</option>
+    <option value="Business / Trading / Agents">Business / Trading / Agents</option>
+    <option value="Army / Police / Fire Services">Army / Police / Fire Services</option>
+    <option value="Occult Science / Astrologer">Occult Science / Astrologer</option>
+    <option value="Sports / Athletics">Sports / Athletics</option>
+    <option value="Hospital / Court Staff">Hospital / Court Staff</option>
+    <option value="Consultant / Advisory">Consultant / Advisory</option>
+    <option value="Builders / Real Estate">Builders / Real Estate</option>
+    <option value="Healing / Therapy / Wellness">Healing / Therapy / Wellness</option>
+    <option value="Events / Wedding Planner">Events / Wedding Planner</option>
+    <option value="Politician / Public Leader">Politician / Public Leader</option>
+    <option value="Tour & Travel / Hospitality">Tour & Travel / Hospitality</option>
+    <option value="Marriage-related / Matrimonial">Marriage-related / Matrimonial</option>
+    <option value="Government Job / Bureaucracy">Government Job / Bureaucracy</option>
+  </select>
+</label>
+<label class="wide-label">Company Name <span class="optional">(Recommended)</span><input id="company" type="text" maxlength="100" placeholder="Enter customer company / business name"></label>
+<label class="wide-label">Vehicle Number – Last 4 Digits <span class="optional">(Optional)</span><input id="vehicle" inputmode="numeric" maxlength="4" placeholder="e.g. 9291"></label>
+<div class="wide-label purpose-input-section">
+<div class="optional-section-title">🔮 What are your current concerns? <span class="optional">(Optional)</span></div>
+<div class="optional-section-subtitle">Select one or more concerns to generate customized crystal recommendations:</div>
+<div id="purposeOptions" class="purpose-options">
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Wealth &amp; Prosperity"><span>💰 Wealth &amp; Prosperity</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Relationships"><span>❤️ Relationships</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Job Success"><span>💼 Job Success</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Business Growth"><span>📈 Business Growth</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Focus &amp; Education"><span>📚 Focus &amp; Education</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Investments"><span>💹 Investments</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Mental Wellness"><span>🧘 Mental Wellness</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Protection"><span>🛡️ Protection</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Health &amp; Energy"><span>⚡ Health &amp; Energy</span></label>
+<label class="purpose-option"><input type="checkbox" name="purpose" value="Confidence"><span>🦁 Confidence</span></label>
+</div>
+</div>
+<div class="wide-label" style="margin: 12px 0;">
+  <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 13.5px; color: #ffd700; font-weight: 700;">
+    <input type="checkbox" id="privacyConsent" style="width: 18px; height: 18px; accent-color: #d4af37;">
+    <span>I agree to store my details for consultation as per Privacy Policy</span>
+  </label>
+</div>
+</div>
+<button class="primary" type="submit">CHECK &amp; GENERATE COMPLETE REPORT <span>→</span></button>
+<div id="error" class="error" role="alert"></div>
+</form>
+</div>
+</section>
+
+<section class="consultancy-section" id="consultancy">
+<div class="consultancy-card">
+<div class="eyebrow">🔮 PERSONALIZED NUMEROLOGY CONSULTANCY</div>
+<h2>Transform Your Name &amp; Mobile Number with Numerological Guidance</h2>
+<div class="gold-line"></div>
+<p class="consultancy-lead">Looking for a <b>Name Correction</b> or a <b>Lucky Mobile Number</b> according to Numerology?</p>
+<p>Get personalized guidance based on your <b>Name, Date of Birth and Mobile Number</b>, with a detailed Chaldean Numerology analysis tailored to your personal and professional requirements.</p>
+<div class="consultancy-services">
+<div class="service-box"><h3>1. Name Correction Consultancy</h3><p>Get personalized <b>Name Correction guidance based on Chaldean Numerology</b>, considering Name Number, Compound Number, Mulank, Bhagyank, and DOB Compatibility.</p></div>
+<div class="service-box"><h3>2. Lucky Mobile Number Consultancy</h3><p>Get professional assistance in selecting a suitable mobile number through detailed analysis of Total &amp; Root, 2-Digit Pairs, Money Attraction Numbers, and Last-Four-Digit Pattern.</p></div>
+<div class="service-box"><h3>3. Personalized Numerology Guidance</h3><p>A detailed one-to-one consultation to identify favourable numerical patterns according to your <b>Name, Date of Birth, Profession and Mobile Number</b>.</p></div>
+</div>
+<div class="consultation-cta"><h3>💼 PROFESSIONAL CONSULTATION</h3><p><b>Name Correction and Lucky Mobile Number Selection are personalized consultancy services available against a professional consultation fee.</b></p>
+<div class="consultant-details"><strong class="brand-name">ASTRO GOUTAM INC</strong><span class="expert-name">Gouotam Dutta</span><span class="expert-title">Numerology &amp; Vastu Consultant · Chaldean Specialist</span><a class="contact-phone" href="tel:9051759636">📞 90517 59636</a><em>Advance Appointment Recommended</em></div></div>
+<div class="consultancy-disclaimer"><b>Disclaimer:</b> Numerology is a traditional guidance system intended for personal guidance and decision-making. It should not be considered a substitute for professional medical, legal or financial advice.</div>
+</div>
+</section>
+
+<section id="result" class="hidden" aria-live="polite">
+<div class="report-head" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;">
+  <div>
+    <div class="eyebrow">YOUR COMPLETE REPORT</div>
+    <h2 id="displayName">—</h2>
+    <p><b>DOB:</b> <span id="displayDob">—</span> &nbsp; <b>Mobile:</b> <span id="displayMobile">—</span> &nbsp; <b>Profession:</b> <span id="displayProfession">—</span> &nbsp; <b>Company:</b> <span id="displayCompany">—</span></p>
+  </div>
+  <button class="btn btn-pdf" type="button" onclick="window.print()">
+    <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+    Print / Save PDF Report
+  </button>
+</div>
+
+<div id="topScores" class="top-scores"></div>
+
+<div class="report-grid">
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">DOB ANALYSIS</div><h3 id="comboHeading">Mulank + Bhagyank (জন্মতারিখ বিচার)</h3></div><div id="dobDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">LUCKY PROFESSION / CAREER</div><h3>Auspicious Career Alignment (শুভ পেশা ও কর্মক্ষেত্র)</h3></div><div id="careerDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">MOBILE ↔ MULANK &amp; BHAGYANK</div><h3>Mobile Total &amp; Root Harmony (মোবাইল ও জন্মতারিখ সামঞ্জস্য)</h3></div><div id="mobileDobDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">PROFESSION ↔ MOBILE</div><h3 id="professionHeading">Profession-wise Mobile Synergy (পেশা অনুযায়ী মোবাইল বিচার)</h3></div><div id="professionDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">NAME ↔ DOB</div><h3>Chaldean Name Compatibility (নামের সংখ্যাতত্ত্ব বিচার)</h3></div><div id="nameDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">COMPANY NAME ↔ DOB</div><h3>Business &amp; Company Name Compatibility (ব্যবসার নাম বিচার)</h3></div><div id="companyDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">MOBILE POSITION GUIDE</div><h3>10-Digit Mobile Position Anatomy (মোবাইলের ১০টি ঘরের অবস্থান গাইড)</h3></div><div id="positionGuide"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">MOBILE PAIR ANALYSIS</div><h3>Mobile 2-Digit Pairs &amp; Dhan Yog (জোড়া সংখ্যা ও ধন যোগ)</h3></div><div id="mobilePairs"></div></article>
+<article id="vehicleCard" class="report-card wide hidden"><div class="card-header"><div class="eyebrow">VEHICLE NUMBER</div><h3>Vehicle Last 4 Digits Luck (গাড়ির শেষ ৪ সংখ্যার শুভাশুভ)</h3></div><div id="vehicleDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">LO-SHU GRID — DOB</div><h3>Birth Lo-Shu Grid (জন্ম লো-শু গ্রিড)</h3></div><div id="birthGrid"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">LO-SHU GRID — DOB + MOBILE</div><h3>Mobile Supported Lo-Shu Grid (মোবাইল সমর্থিত লো-শু গ্রিড)</h3></div><div id="combinedGrid"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">LO-SHU MISSING NUMBER REMEDIES</div><h3>Missing Number Vastu Remedies (ঘাটতি সংখ্যার বাস্তু প্রতিকার)</h3></div><div id="loshuRemedies"></div></article>
+<article id="purposeCard" class="report-card wide hidden"><div class="card-header"><div class="eyebrow">PURPOSE-BASED CRYSTAL / BRACELET</div><h3>Personalized Purpose-Based Crystal Recommendation (লক্ষ্যভিত্তিক ক্রিস্টাল)</h3></div><div id="purposeDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">LIFE PARTNER / BUSINESS PARTNER</div><h3>Partner Compatibility Matrix (জীবনসঙ্গী ও ব্যবসায়িক পার্টনার সামঞ্জস্য)</h3></div><div id="partnerDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">DOB COMBINATION DETAILS</div><h3 id="detailHeading">Traditional Numerology Details (পরিপূর্ণ ঐতিহ্যগত তথ্য)</h3></div><div id="comboDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">TERMINAL 4-DIGIT VIBRATION</div><h3>Mobile Last 4 Digits Manifestation (মোবাইলের শেষ ৪ সংখ্যার শক্তি)</h3></div><div id="mobileLast4Details"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">HEALTH &amp; LIFESTYLE</div><h3>Planetary Health &amp; Dietary Harmonizers (গ্রহ অনুযায়ী স্বাস্থ্য ও খাদ্যাভ্যাস)</h3></div><div id="healthDetails"></div></article>
+<article class="report-card wide"><div class="card-header"><div class="eyebrow">LUCKY SCENTS &amp; AROMA</div><h3>Planetary Perfumes &amp; Aromatherapy (শুভ পারফিউম ও সুগন্ধি)</h3></div><div id="scentDetails"></div></article>
+<article class="report-card wide">
+  <div class="card-header"><div class="eyebrow">ASTRO-HORARY PRASHNA</div><h3>Instant Horary Query &amp; House Analysis (প্রশ্নকালীন তাৎক্ষণিক বিচার)</h3></div>
+  <div style="margin: 12px 0;">
+    <label style="font-weight:700; color:#ffd700;">Type Your Question for Instant Horary Guidance (আপনার প্রশ্নটি লিখুন):</label>
+    <div style="display:flex; gap:10px; margin-top:6px;">
+      <input id="horaryQuestion" type="text" placeholder="e.g. Will my business expand? / নতুন চাকরি কবে পাবো?" style="flex:1;">
+      <button type="button" class="primary" style="width:auto; padding:10px 22px;" onclick="renderHoraryQuery()">ANALYZE NOW</button>
+    </div>
+  </div>
+  <div id="prashnaDetails"></div>
+</article>
+
+<article class="report-card wide" id="consolidatedRemediesCard" style="border: 2px solid #ffd700; margin-top: 20px; background: linear-gradient(135deg, rgba(20, 36, 75, 0.98), rgba(8, 15, 38, 0.99));">
+  <div class="card-header" style="border-bottom: 2px solid rgba(255, 215, 0, 0.4);">
+    <div class="eyebrow" style="color:#ffd700; font-size:12px;">COMPLETE HARMONIZING BLUEPRINT · সার্বিক প্রতিকার ব্লুপ্রিন্ট</div>
+    <h3 style="color:#ffffff; font-size:22px; font-weight:800;">💎 আপনার সামগ্রিক প্রতিকার ও শুভ নির্দেশনা (Complete Remedial Blueprint)</h3>
+  </div>
+  <div id="consolidatedRemediesDetails"></div>
+</article>
+</div>
+
+<article class="report-card wide" style="border: 2px solid #ffd700; margin-top: 25px; background: linear-gradient(135deg, rgba(20, 36, 75, 0.98), rgba(8, 15, 38, 0.99)); text-align:center;">
+  <div class="card-header" style="border-bottom: 2px solid rgba(255, 215, 0, 0.4); margin-bottom: 15px; padding-bottom: 10px;">
+    <div style="font-size: 26px; color: #ffd700; margin-bottom: 4px; letter-spacing: 6px;">卐 ॐ 卐</div>
+    <div class="eyebrow" style="color:#ffd700; font-size:12px;">PROFESSIONAL CONSULTANCY &amp; GUIDANCE</div>
+    <div class="brand-name" style="margin-top: 4px;">ASTRO GOUTAM INC</div>
+  </div>
+  <div class="expert-name" style="font-size:22px; font-weight:800; color:#fff;">Gouotam Dutta</div>
+  <div style="color:#dbeafe; font-size:14.5px; margin: 8px 0 16px 0;">Need Personalized Partner Matching, Name Correction or Lucky Mobile Selection?</div>
+  <div class="partner-contact-buttons" style="display:flex; justify-content:center; gap:15px; margin-top:10px; flex-wrap:wrap;">
+    <a class="btn btn-call" href="tel:+919051759636">
+      <svg class="btn-icon" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+      Call: 90517 59636
+    </a>
+    <a class="btn btn-whatsapp" href="https://wa.me/919051759636?text=Hello%20Gouotam%20Dutta%2C%20I%20need%20Numerology%20consultation." target="_blank" rel="noopener">
+      <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.07l-.29-.17-3.12.82.83-3.04-.19-.3a8.217 8.217 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24"/></svg>
+      WhatsApp Now
+    </a>
+  </div>
+</article>
+
+<button class="secondary" type="button" onclick="document.getElementById('checkerForm').reset();document.getElementById('result').classList.add('hidden');window.scrollTo({top:0,behavior:'smooth'});" style="margin-top:25px;">CHECK ANOTHER PERSON</button>
+</section>
+</main>
+<footer><p>© 2026 ASTRO GOUTAM INC · Individual Chaldean Numerology</p><p class="source-note">Traditional numerology interpretation only. This software is not scientifically validated and should not be the sole basis for important decisions.</p></footer>
+<script src="data.js"></script>
+<script src="mobileMaster.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
